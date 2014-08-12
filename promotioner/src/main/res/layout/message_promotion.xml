@@ -81,29 +81,33 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="120dp"
-                android:clickable="true"
+
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:orientation="horizontal"
-                android:background="@drawable/user_item_press">
+                android:background="@drawable/ic_more_item_default">
                 <ImageView
                     android:id="@+id/add_idcard_front"
                     android:contentDescription="@string/desc"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:layout_height="fill_parent"
-                    android:background="@drawable/ic_launcher"
+                    android:background="@drawable/add"
                     android:layout_marginRight="10dp"/>
                 <ImageView
                     android:id="@+id/add_idcard_back"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:contentDescription="@string/desc"
                     android:layout_width="0dp"
                     android:layout_margin="10dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/ic_launcher"
+                    android:background="@drawable/add"
                     android:layout_marginRight="10dp"/>
             </LinearLayout>
             <TextView
@@ -118,20 +122,22 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="150dp"
-                android:clickable="true"
+
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:orientation="horizontal"
-                android:background="@drawable/user_item_press">
+                android:background="@drawable/ic_more_item_default">
                 <ImageView
                     android:id="@+id/add_business_license"
                     android:contentDescription="@string/desc"
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:layout_centerInParent="true"
                     android:layout_margin="10dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/ic_launcher"
+                    android:background="@drawable/add"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"/>
             </RelativeLayout>
@@ -183,7 +189,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/user_item_press">
@@ -193,12 +199,12 @@
                     android:layout_height="22dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dp"
-                    android:background="@drawable/ic_launcher"
+                    android:background="@drawable/gps"
                     android:layout_marginRight="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/bbutton_info_edge"
+                    android:textColor="#1877A2"
                     android:layout_gravity="center_vertical"
                     android:textSize="20sp"
                     android:text="@string/get_location"/>

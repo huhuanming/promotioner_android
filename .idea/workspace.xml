@@ -21,71 +21,19 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="sss" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.promotioner.main" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b0b8e1e-6030-4330-8811-41fa8e54bc90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_bottom_default.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_bottom_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_default.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_middle_default.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_middle_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_top_default.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/ic_more_item_top_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button/BootstrapButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button/BootstrapEditText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button/FontAwesome.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerAdd.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Application/PromotionerApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/layout/add_promotioner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_danger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_danger_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_default_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_info_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_inverse.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_inverse_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_primary.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_primary_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_success.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_success_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_warning.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/bbuton_warning_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/layout/bootstrap_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/layout/bootstrap_button_fill.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/butterknife_5_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/values/color.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_danger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_rounded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_rounded_danger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_rounded_success.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_rounded_warning.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_success.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/edittext_background_warning.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/user_item_press.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/user_itembottom_press.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/user_itemmiddle_press.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable/user_itemtop_press.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/PromotionerActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/promotioner/src/main/res/layout/activity_promotioner.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" />
+    <list default="true" id="0b0b8e1e-6030-4330-8811-41fa8e54bc90" name="Default" comment="地推页面+依赖注入框架">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi/gps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Utils/BitmapUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/roundedimageview_1_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java" afterPath="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/build.gradle" afterPath="$PROJECT_DIR$/promotioner/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/promotioner/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml" afterPath="$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/promotioner.iml" afterPath="$PROJECT_DIR$/promotioner/promotioner.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/res/menu/promotioner.xml" afterPath="$PROJECT_DIR$/promotioner/src/main/res/menu/promotioner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/promotioner/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/promotioner/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/promotioner/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="promotioner_android.iws" />
@@ -117,8 +65,8 @@
       <file leaf-file-name="PromotionerMessage.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4680851" vertical-offset="208" max-vertical-offset="1080">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state vertical-scroll-proportion="1.265625" vertical-offset="1512" max-vertical-offset="2466">
+              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,98 +78,38 @@
         <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerAdd.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PromotionMain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="message_promotion.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0" vertical-offset="4086" max-vertical-offset="4626">
-              <caret line="237" column="43" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
+            <state vertical-scroll-proportion="-14.433333" vertical-offset="1439" max-vertical-offset="4734">
+              <caret line="104" column="60" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
               <folding>
                 <element signature="e#911#925#0" expanded="true" />
                 <element signature="e#1994#2018#0" expanded="true" />
                 <element signature="e#3077#3097#0" expanded="true" />
                 <element signature="e#3485#3501#0" expanded="true" />
-                <element signature="e#4057#4071#0" expanded="true" />
-                <element signature="e#4517#4531#0" expanded="true" />
-                <element signature="e#5214#5240#0" expanded="true" />
-                <element signature="e#5802#5816#0" expanded="true" />
-                <element signature="e#6565#6579#0" expanded="true" />
-                <element signature="e#7603#7625#0" expanded="true" />
-                <element signature="e#7997#8021#0" expanded="true" />
-                <element signature="e#8529#8543#0" expanded="true" />
-                <element signature="e#9216#9238#0" expanded="true" />
-                <element signature="e#9608#9635#0" expanded="true" />
-                <element signature="e#10396#10418#0" expanded="true" />
-                <element signature="e#10827#10847#0" expanded="true" />
+                <element signature="e#4022#4036#0" expanded="true" />
+                <element signature="e#5343#5369#0" expanded="true" />
+                <element signature="e#5896#5910#0" expanded="true" />
+                <element signature="e#6741#6755#0" expanded="true" />
+                <element signature="e#7779#7801#0" expanded="true" />
+                <element signature="e#8173#8197#0" expanded="true" />
+                <element signature="e#8704#8718#0" expanded="true" />
+                <element signature="e#9366#9388#0" expanded="true" />
+                <element signature="e#9758#9785#0" expanded="true" />
+                <element signature="e#10546#10568#0" expanded="true" />
+                <element signature="e#10977#10997#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-              <folding>
-                <element signature="e#265#283#0" expanded="true" />
-                <element signature="e#524#542#0" expanded="true" />
-                <element signature="e#901#915#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/promotioner/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_promotioner.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/add_promotioner.xml">
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="450">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="522">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -922,6 +810,11 @@
                 <option name="name" value="prepareComAndroidSupportAppcompatV71910Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.makeramen:roundedimageview:1.3.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/promotioner" />
+                <option name="name" value="prepareComMakeramenRoundedimageview130Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/promotioner" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
@@ -1005,7 +898,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4223313416202" />
+        <entry key="$PROJECT_DIR$" value="4223345990002" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1355,11 +1248,12 @@
         <option value="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button/BootstrapEditText.java" />
         <option value="$PROJECT_DIR$/promotioner/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml" />
         <option value="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionMain.java" />
-        <option value="$PROJECT_DIR$/promotioner/build.gradle" />
-        <option value="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java" />
         <option value="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerAdd.java" />
+        <option value="$PROJECT_DIR$/promotioner/build.gradle" />
+        <option value="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Utils/BitmapUtils.java" />
+        <option value="$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml" />
+        <option value="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java" />
       </list>
     </option>
   </component>
@@ -1475,32 +1369,6 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promotioner_android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promotioner_android" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promotioner" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1565,9 +1433,9 @@
       <recent name="com.promotioner.main.View.Button" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/promotioner/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button" />
-      <recent name="$PROJECT_DIR$/promotioner/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/promotioner/libs" />
       <recent name="$PROJECT_DIR$/promotioner/src/main/res/values" />
     </key>
@@ -1602,6 +1470,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1627,19 +1508,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1773,15 +1641,19 @@
       <created>1407753857026</created>
       <updated>1407753857026</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="地推页面+依赖注入框架">
+      <created>1407814106571</created>
+      <updated>1407814106571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1366" height="674" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1789,18 +1661,18 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80839413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80474454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.709854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.709854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2993921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21352583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3248175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1827,12 +1699,101 @@
     </option>
     <MESSAGE value="项目主要文件上传" />
     <MESSAGE value="项目主要文件上传1" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目主要文件上传1" />
+    <MESSAGE value="地推页面+依赖注入框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="地推页面+依赖注入框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1080">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="540">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="360">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4086" max-vertical-offset="4626">
+          <caret line="237" column="43" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
+          <folding>
+            <element signature="e#911#925#0" expanded="true" />
+            <element signature="e#1994#2018#0" expanded="true" />
+            <element signature="e#3077#3097#0" expanded="true" />
+            <element signature="e#3485#3501#0" expanded="true" />
+            <element signature="e#4022#4036#0" expanded="true" />
+            <element signature="e#5343#5369#0" expanded="true" />
+            <element signature="e#5896#5910#0" expanded="true" />
+            <element signature="e#6741#6755#0" expanded="true" />
+            <element signature="e#7779#7801#0" expanded="true" />
+            <element signature="e#8173#8197#0" expanded="true" />
+            <element signature="e#8704#8718#0" expanded="true" />
+            <element signature="e#9366#9388#0" expanded="true" />
+            <element signature="e#9758#9785#0" expanded="true" />
+            <element signature="e#10546#10568#0" expanded="true" />
+            <element signature="e#10977#10997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="684">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="558">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/add_promotioner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="450">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="522">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
@@ -1844,9 +1805,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3563" max-vertical-offset="4266">
           <caret line="217" column="52" selection-start-line="217" selection-start-column="52" selection-end-line="217" selection-end-column="52" />
@@ -1855,31 +1813,33 @@
             <element signature="e#1994#2018#0" expanded="true" />
             <element signature="e#3077#3097#0" expanded="true" />
             <element signature="e#3485#3501#0" expanded="true" />
-            <element signature="e#4057#4071#0" expanded="true" />
-            <element signature="e#4517#4531#0" expanded="true" />
-            <element signature="e#5214#5240#0" expanded="true" />
-            <element signature="e#5802#5816#0" expanded="true" />
-            <element signature="e#6565#6579#0" expanded="true" />
-            <element signature="e#7603#7625#0" expanded="true" />
-            <element signature="e#7997#8021#0" expanded="true" />
-            <element signature="e#8529#8543#0" expanded="true" />
-            <element signature="e#9216#9238#0" expanded="true" />
-            <element signature="e#9608#9635#0" expanded="true" />
-            <element signature="e#10396#10418#0" expanded="true" />
-            <element signature="e#10827#10847#0" expanded="true" />
+            <element signature="e#4022#4036#0" expanded="true" />
+            <element signature="e#5343#5369#0" expanded="true" />
+            <element signature="e#5896#5910#0" expanded="true" />
+            <element signature="e#6741#6755#0" expanded="true" />
+            <element signature="e#7779#7801#0" expanded="true" />
+            <element signature="e#8173#8197#0" expanded="true" />
+            <element signature="e#8704#8718#0" expanded="true" />
+            <element signature="e#9366#9388#0" expanded="true" />
+            <element signature="e#9758#9785#0" expanded="true" />
+            <element signature="e#10546#10568#0" expanded="true" />
+            <element signature="e#10977#10997#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/add_promotioner.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/add_promotioner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="450">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/values/styles.xml">
@@ -1902,11 +1862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="504">
           <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#265#283#0" expanded="true" />
-            <element signature="e#524#542#0" expanded="true" />
-            <element signature="e#901#915#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1978,14 +1934,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/bootstrap_button.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36960986" vertical-offset="0" max-vertical-offset="828">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button/FontAwesome.java">
@@ -2038,15 +1994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326886" vertical-offset="1898" max-vertical-offset="28584">
           <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="522">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2059,20 +2006,75 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/add_promotioner.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="450">
+        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="450">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/View/Button/BootstrapEditText.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.5357144" vertical-offset="918" max-vertical-offset="3222">
           <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="522">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="594">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06963249" vertical-offset="0" max-vertical-offset="517">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5125725" vertical-offset="167" max-vertical-offset="684">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/promotioner/build/exploded-aar/com.makeramen/roundedimageview/1.3.0/classes.jar!/com/makeramen/RoundedImageView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2776618" vertical-offset="367" max-vertical-offset="1602">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/drawable/user_item_press.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17857143" vertical-offset="0" max-vertical-offset="504">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Utils/BitmapUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4081238" vertical-offset="167" max-vertical-offset="792">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2080,75 +2082,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/res/layout/message_promotion.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="4086" max-vertical-offset="4626">
-          <caret line="237" column="43" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
+        <state vertical-scroll-proportion="-14.433333" vertical-offset="1439" max-vertical-offset="4734">
+          <caret line="104" column="60" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
           <folding>
             <element signature="e#911#925#0" expanded="true" />
             <element signature="e#1994#2018#0" expanded="true" />
             <element signature="e#3077#3097#0" expanded="true" />
             <element signature="e#3485#3501#0" expanded="true" />
-            <element signature="e#4057#4071#0" expanded="true" />
-            <element signature="e#4517#4531#0" expanded="true" />
-            <element signature="e#5214#5240#0" expanded="true" />
-            <element signature="e#5802#5816#0" expanded="true" />
-            <element signature="e#6565#6579#0" expanded="true" />
-            <element signature="e#7603#7625#0" expanded="true" />
-            <element signature="e#7997#8021#0" expanded="true" />
-            <element signature="e#8529#8543#0" expanded="true" />
-            <element signature="e#9216#9238#0" expanded="true" />
-            <element signature="e#9608#9635#0" expanded="true" />
-            <element signature="e#10396#10418#0" expanded="true" />
-            <element signature="e#10827#10847#0" expanded="true" />
+            <element signature="e#4022#4036#0" expanded="true" />
+            <element signature="e#5343#5369#0" expanded="true" />
+            <element signature="e#5896#5910#0" expanded="true" />
+            <element signature="e#6741#6755#0" expanded="true" />
+            <element signature="e#7779#7801#0" expanded="true" />
+            <element signature="e#8173#8197#0" expanded="true" />
+            <element signature="e#8704#8718#0" expanded="true" />
+            <element signature="e#9366#9388#0" expanded="true" />
+            <element signature="e#9758#9785#0" expanded="true" />
+            <element signature="e#10546#10568#0" expanded="true" />
+            <element signature="e#10977#10997#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promotioner/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#265#283#0" expanded="true" />
-            <element signature="e#524#542#0" expanded="true" />
-            <element signature="e#901#915#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promotioner/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerAdd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promotioner/src/main/java/com/promotioner/main/Activity/PromotionerMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4680851" vertical-offset="208" max-vertical-offset="1080">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state vertical-scroll-proportion="1.265625" vertical-offset="1512" max-vertical-offset="2466">
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
