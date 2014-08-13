@@ -89,29 +89,32 @@ public class PromotionerMessage extends PromotionMain {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode)
+        if (resultCode == RESULT_OK)
         {
-            case ADD_IDCARD_FRONT:
-                try{
-                    add_idcard_front.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath),20)));
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-                break;
-            case ADD_IDCARD_BACK:
-                try{
-                    add_idcard_back.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath),20)));
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-                break;
-            case ADD_BUSINESS_LICENSE:
-                try{
-                    add_business_license.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath),20)));
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-                break;
+            switch (requestCode)
+            {
+                case ADD_IDCARD_FRONT:
+                    try{
+                        add_idcard_front.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath), 20)));
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+                    break;
+                case ADD_IDCARD_BACK:
+                    try{
+                        add_idcard_back.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath), 20)));
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+                    break;
+                case ADD_BUSINESS_LICENSE:
+                    try{
+                        add_business_license.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath), 20)));
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
+                    break;
+            }
         }
     }
 
