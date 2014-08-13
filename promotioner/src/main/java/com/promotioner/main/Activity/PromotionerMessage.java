@@ -2,6 +2,7 @@ package com.promotioner.main.Activity;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -92,21 +93,21 @@ public class PromotionerMessage extends PromotionMain {
         {
             case ADD_IDCARD_FRONT:
                 try{
-                    add_idcard_front.setImageBitmap(BitmapUtils.revitionImageSize(filepath));
+                    add_idcard_front.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath),20)));
                 }catch (IOException e){
                     e.printStackTrace();
                 }
                 break;
             case ADD_IDCARD_BACK:
                 try{
-                    add_idcard_back.setImageBitmap(BitmapUtils.revitionImageSize(filepath));
+                    add_idcard_back.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath),20)));
                 }catch (IOException e){
                     e.printStackTrace();
                 }
                 break;
             case ADD_BUSINESS_LICENSE:
                 try{
-                    add_business_license.setImageBitmap(BitmapUtils.revitionImageSize(filepath));
+                    add_business_license.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath),20)));
                 }catch (IOException e){
                     e.printStackTrace();
                 }
