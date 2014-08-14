@@ -81,34 +81,67 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="120dp"
-
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:orientation="horizontal"
                 android:background="@drawable/ic_more_item_default">
-                <ImageView
-                    android:id="@+id/add_idcard_front"
-                    android:contentDescription="@string/desc"
+                <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:layout_height="fill_parent"
-                    android:background="@drawable/add"
-                    android:layout_marginRight="10dp"/>
-                <ImageView
-                    android:id="@+id/add_idcard_back"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:contentDescription="@string/desc"
-                    android:layout_width="0dp"
-                    android:layout_margin="10dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/add"
-                    android:layout_marginRight="10dp"/>
+                    >
+                    <ImageView
+                        android:id="@+id/add_idcard_front"
+                        android:contentDescription="@string/desc"
+                        android:layout_width="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/add"
+                        />
+                    <TextView
+                        android:id="@+id/front_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/front_page"
+                        android:textSize="15sp"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="40dp"
+                        android:textColor="#747675"
+                        />
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:id="@+id/add_idcard_back"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/desc"
+                        android:layout_width="fill_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/add"
+                       />
+                    <TextView
+                        android:id="@+id/back_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/back_page"
+                        android:textSize="15sp"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="40dp"
+                        android:textColor="#747675"
+                        />
+                    </RelativeLayout>
+
             </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
@@ -122,7 +155,6 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="150dp"
-
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -150,7 +182,6 @@
                 android:textSize="18sp"
                 android:text="@string/bank"/>
             <RelativeLayout
-
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
@@ -171,7 +202,6 @@
                     android:background="@null"
                     android:singleLine="true"
                     android:hint="@string/bank_account"/>
-
             </RelativeLayout>
 
             <TextView
@@ -184,7 +214,6 @@
                 android:text="@string/store_location"/>
 
             <LinearLayout
-
                 android:id="@+id/get_location"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -202,6 +231,7 @@
                     android:background="@drawable/gps"
                     android:layout_marginRight="10dp"/>
                 <TextView
+                    android:id="@+id/location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#1877A2"

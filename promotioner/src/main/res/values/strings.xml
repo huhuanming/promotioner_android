@@ -17,6 +17,7 @@
     <string name="bank_account">银行账号</string>
     <string name="store_location">店铺定位</string>
     <string name="get_location">获取定位</string>
+    <string name="startlocation">正在定位中...</string>
     <string name="scope_of_delivery">送餐范围</string>
     <string name="choose_scope">选择送餐半径</string>
     <string name="add_finish">完成创建</string>
