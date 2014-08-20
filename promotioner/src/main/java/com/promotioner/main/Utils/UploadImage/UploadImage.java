@@ -2,6 +2,8 @@ package com.promotioner.main.Utils.UploadImage;
 
 import android.util.Log;
 
+import com.promotioner.main.Utils.TokenUtils.QiniuToken;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -58,11 +60,15 @@ public class UploadImage {
 	 * upload 
 	 */
 	private void addFormField(DataOutputStream output) {
+        //计算token上传
+        QiniuToken qiniuToken = new QiniuToken("back-end-linsece","juTtcBATDwmtCKT6fznhcbrHaBJrp4r3aB3K6xdG","34We6ZKVeyv4-jyEy006JNtDQDtiQAWhjpDwBjoc");
+        String token = qiniuToken.uploadToken();
+
 		StringBuilder sb = new StringBuilder();
 			sb.append(twoHyphens + boundary + lineEnd);
 			sb.append("Content-Disposition: form-data; name=\"token\"" + lineEnd);
 			sb.append(lineEnd);
-			sb.append(uptoken + lineEnd);
+			sb.append(token + lineEnd);
 		try {
 			output.writeBytes(sb.toString());// 发送表单字段数据
 		} catch (IOException e) {

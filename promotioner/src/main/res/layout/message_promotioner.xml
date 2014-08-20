@@ -185,6 +185,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/user_item_press">
@@ -249,26 +250,19 @@
                 android:layout_marginTop="10dp"
                 android:textSize="18sp"
                 android:text="@string/scope_of_delivery"/>
-            <RelativeLayout
-                android:id="@+id/choose_scope"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
+
+
+            <Spinner
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/user_item_press">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_centerInParent="true"
+                android:id="@+id/spinner_radius"
 
-                    android:textColor="#747675"
-                    android:textSize="20sp"
-                    android:text="@string/choose_scope"/>
-
-
-            </RelativeLayout>
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
 
             <com.promotioner.main.View.Button.BootstrapButton
                 android:id="@+id/add_finish"

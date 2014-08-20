@@ -40,6 +40,11 @@
             android:label="@string/back"
             />
 
+        <activity android:name=".Activity.PromotionerLogin"
+            android:theme="@style/MyTheme"
+            android:label="@string/back"
+            />
+
         <activity android:name=".Activity.PromotionMain"
             android:theme="@style/MyTheme"
             />

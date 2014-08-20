@@ -11,10 +11,13 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.amap.api.location.AMapLocation;
@@ -37,7 +40,16 @@ import butterknife.OnClick;
  */
 public class PromotionerMessage extends PromotionMain implements AMapLocationListener {
 
-    private String filepath;//照片路径
+    private String front_filepath = "";//身份证正面照片路径
+    private String back_filepath = "";//身份证反面照片路径
+    private String license_filepath = "";//营业执照照片路径
+    private boolean have_front_img = false;
+    private boolean have_back_img = false;
+    private boolean have_license_img = false;
+    //spinner
+    private String[] radius={"500m","1000m","2000m","3000m"};
+    private ArrayAdapter<String> adapter;
+
     private static final int ADD_IDCARD_BACK = 2;  //身份证反面
     private static final int ADD_IDCARD_FRONT = 1;  //身份证正面
     private static final int ADD_BUSINESS_LICENSE = 3;  //营业执照
@@ -50,16 +62,17 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     @InjectView(R.id.add_idcard_back)ImageView add_idcard_back;
     @InjectView(R.id.add_business_license)ImageView add_business_license;
     @InjectView(R.id.get_location)LinearLayout get_location;
-    @InjectView(R.id.choose_scope)RelativeLayout choose_scope;
     @InjectView(R.id.add_finish)BootstrapButton add_finish;
     @InjectView(R.id.front_page)TextView front_page;
     @InjectView(R.id.back_page)TextView back_page;
     @InjectView(R.id.location)TextView location;
+    @InjectView(R.id.spinner_radius)Spinner spinner;
+
 
     @OnClick(R.id.add_idcard_front)void addidcardfront(){
-        filepath = "/mnt/sdcard/DCIM/Camera/"
+        front_filepath = "/mnt/sdcard/DCIM/Camera/"
                 + System.currentTimeMillis() + ".png";
-        final File file = new File(filepath);
+        final File file = new File(front_filepath);
         final Uri imageuri = Uri.fromFile(file);
         // TODO Auto-generated method stub
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -67,9 +80,9 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
         startActivityForResult(intent, ADD_IDCARD_FRONT);
     }
     @OnClick(R.id.add_idcard_back)void addidcardback(){
-        filepath = "/mnt/sdcard/DCIM/Camera/"
+        back_filepath = "/mnt/sdcard/DCIM/Camera/"
                 + System.currentTimeMillis() + ".png";
-        final File file = new File(filepath);
+        final File file = new File(back_filepath);
         final Uri imageuri = Uri.fromFile(file);
         // TODO Auto-generated method stub
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -78,9 +91,9 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     }
 
     @OnClick(R.id.add_business_license)void addbusinesslicense(){
-        filepath = "/mnt/sdcard/DCIM/Camera/"
+        license_filepath = "/mnt/sdcard/DCIM/Camera/"
                 + System.currentTimeMillis() + ".png";
-        final File file = new File(filepath);
+        final File file = new File(license_filepath);
         final Uri imageuri = Uri.fromFile(file);
         // TODO Auto-generated method stub
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -93,15 +106,55 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
         location.setText(R.string.startlocation);
         init();
     }
+
+    @OnClick(R.id.add_finish)void addfinish()
+    {
+//        ArrayList<Image> arrayList = new ArrayList<Image>();
+//        try{
+//            arrayList.add(new Image(front_filepath,"file"));
+//            arrayList.add(new Image(back_filepath,"file"));
+//            arrayList.add(new Image(license_filepath,"file"));
+//        }catch (Exception e){
+//
+//        }
+//        PMessageUploadImage pMessageUploadImage = new PMessageUploadImage(arrayList);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.message_promotion);
+        setContentView(R.layout.message_promotioner);
         ButterKnife.inject(this);//为监听所用
         //显示actionbar上面的返回键
         ActionBar actionBar = this.getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        // 初始化定位，只采用网络定位
+        mLocationManagerProxy = LocationManagerProxy.getInstance(this);
+        mLocationManagerProxy.setGpsEnable(false);
+
+
+        //将可选内容与ArrayAdapter连接起来
+        adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_print,radius);
+
+
+        //设置下拉列表的风格
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item_print);
+
+        //将adapter 添加到spinner中
+        spinner.setAdapter(adapter);
+
+        //添加事件Spinner事件监听
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.e("ssss",i+"");
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
     }
 
@@ -114,7 +167,8 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
             {
                 case ADD_IDCARD_FRONT:
                     try{
-                        add_idcard_front.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath), 20)));
+                        have_front_img = true;
+                        add_idcard_front.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(front_filepath), 20)));
                         front_page.setVisibility(View.GONE);
                     }catch (IOException e){
                         e.printStackTrace();
@@ -122,7 +176,8 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
                     break;
                 case ADD_IDCARD_BACK:
                     try{
-                        add_idcard_back.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath), 20)));
+                        have_back_img = true;
+                        add_idcard_back.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(back_filepath), 20)));
                         back_page.setVisibility(View.GONE);
                     }catch (IOException e){
                         e.printStackTrace();
@@ -130,9 +185,10 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
                     break;
                 case ADD_BUSINESS_LICENSE:
                     try{
+                        have_license_img = true;
                         //调整控件长宽
                         add_business_license.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-                        add_business_license.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(filepath), 20)));
+                        add_business_license.setBackgroundDrawable(new BitmapDrawable(BitmapUtils.genRoundCorner(BitmapUtils.revitionImageSize(license_filepath), 20)));
 
                     }catch (IOException e){
                         e.printStackTrace();
@@ -180,16 +236,15 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     }
     @Override
     public void onLocationChanged(AMapLocation amapLocation) {
-        Log.e("ssssssss","ddd");
         if (amapLocation!=null&&amapLocation.getAMapException().getErrorCode() == 0) {
             // 定位成功回调信息，设置相关消息
             String Latitude = amapLocation.getLatitude()+"";
             String Longitude = amapLocation.getLongitude()+"";
             location.setText(amapLocation.getAddress());
-//            //移除定位请求
-//            mLocationManagerProxy.removeUpdates(this);
-//            // 销毁定位
-//            mLocationManagerProxy.destroy();
+            //移除定位请求
+            mLocationManagerProxy.removeUpdates(this);
+            // 销毁定位
+            mLocationManagerProxy.destroy();
         }
 
     }
@@ -198,9 +253,7 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
      * 初始化定位
      */
     private void init() {
-        // 初始化定位，只采用网络定位
-        mLocationManagerProxy = LocationManagerProxy.getInstance(this);
-        mLocationManagerProxy.setGpsEnable(false);
+
         // 此方法为每隔固定时间会发起一次定位请求，为了减少电量消耗或网络流量消耗，
         // 注意设置合适的定位时间的间隔（最小间隔支持为2000ms），并且在合适时间调用removeUpdates()方法来取消定位请求
         // 在定位结束后，在合适的生命周期调用destroy()方法

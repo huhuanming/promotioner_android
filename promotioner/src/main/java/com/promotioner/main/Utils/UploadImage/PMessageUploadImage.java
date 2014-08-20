@@ -63,7 +63,7 @@ public class PMessageUploadImage {
             if (result != null && !result.equals("")) {
                 photosHash.add(result);
                 num++;
-                if(imageArray.size() > 0)
+                if(imageArray.size() > num)
                 {
                     new ImageArrayUploadTask().execute(imageArray.get(num));
                 }

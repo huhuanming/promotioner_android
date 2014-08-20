@@ -1,4 +1,5 @@
 package com.promotioner.main.ApiManager;
+import com.promotioner.main.Model.LoginBackData;
 import com.promotioner.main.Model.PMessageBackData;
 import rx.Observable;
 import rx.Observer;
@@ -18,6 +19,23 @@ public class PromotionerApiManager extends MainApiManager{
             public Subscription onSubscribe(Observer<? super PMessageBackData> observer) {
                 try {
                     observer.onNext(apiManager.getPMessageBackData(channel_id,push_id,mac_address));
+                    observer.onCompleted();
+                } catch (Exception e) {
+                    observer.onError(e);
+                }
+
+                return Subscriptions.empty();
+            }
+        }).subscribeOn(Schedulers.threadPoolForIO());
+    }
+
+    private static final PromotionerApiInterface.ApiManagerLogin LoginapiManager = restAdapter.create(PromotionerApiInterface.ApiManagerLogin.class);
+    public static Observable<LoginBackData> getLoginBackData(final String username, final String passwork) {
+        return Observable.create(new Observable.OnSubscribeFunc<LoginBackData>() {
+            @Override
+            public Subscription onSubscribe(Observer<? super LoginBackData> observer) {
+                try {
+                    observer.onNext(LoginapiManager.getLoginBackData(username,passwork));
                     observer.onCompleted();
                 } catch (Exception e) {
                     observer.onError(e);

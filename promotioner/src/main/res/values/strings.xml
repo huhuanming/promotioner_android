@@ -21,4 +21,9 @@
     <string name="scope_of_delivery">送餐范围</string>
     <string name="choose_scope">选择送餐半径</string>
     <string name="add_finish">完成创建</string>
+
+    <string name="welcomeback">欢迎回来</string>
+    <string name="phonenumber">手机号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
 </resources>
