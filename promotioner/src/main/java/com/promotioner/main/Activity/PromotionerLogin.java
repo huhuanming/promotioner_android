@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -131,6 +132,7 @@ public class PromotionerLogin extends PromotionMain {
                 },new Action1<Throwable>() {
                     @Override
                     public void call(Throwable throwable) {
+                        Log.e("ssssss",throwable.toString());
                         // 获取一个Message对象，设置what为1
                         Message msg = Message.obtain();
                         msg.obj = null;

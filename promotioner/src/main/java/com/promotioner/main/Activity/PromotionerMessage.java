@@ -7,7 +7,6 @@ import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +46,8 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     private boolean have_back_img = false;
     private boolean have_license_img = false;
     //spinner
-    private String[] radius={"500m","1000m","2000m","3000m"};
+    private String[] radiuss={"500m","1000m","2000m","3000m"};
+    private String radius = "500";
     private ArrayAdapter<String> adapter;
 
     private static final int ADD_IDCARD_BACK = 2;  //身份证反面
@@ -58,6 +58,7 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     @InjectView(R.id.merchants_name)EditText merchants_name;
     @InjectView(R.id.store_name)EditText store_name;
     @InjectView(R.id.bank_account)EditText bank_account;
+    @InjectView(R.id.phonenumber)EditText phonenumber;
     @InjectView(R.id.add_idcard_front)ImageView add_idcard_front;
     @InjectView(R.id.add_idcard_back)ImageView add_idcard_back;
     @InjectView(R.id.add_business_license)ImageView add_business_license;
@@ -134,7 +135,7 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
 
 
         //将可选内容与ArrayAdapter连接起来
-        adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_print,radius);
+        adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_print,radiuss);
 
 
         //设置下拉列表的风格
@@ -147,7 +148,7 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.e("ssss",i+"");
+                radius = radiuss[i];
             }
 
             @Override

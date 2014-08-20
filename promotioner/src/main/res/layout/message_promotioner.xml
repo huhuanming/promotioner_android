@@ -263,6 +263,38 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#747675"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text="@string/phone"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/user_item_press">
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:textColor="#777777"
+                    android:textColorHint="#ffdddddd"
+                    android:textSize="20sp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/number"/>
+            </RelativeLayout>
 
             <com.promotioner.main.View.Button.BootstrapButton
                 android:id="@+id/add_finish"
