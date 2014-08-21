@@ -11,8 +11,24 @@ import retrofit.http.Query;
  */
 public class PromotionerApiInterface {
     public interface ApiManagerNoticeService {
-        @POST("/uploadbaidupush")
-        PMessageBackData getPMessageBackData(@Query("channel_id") String channel_id, @Query("push_id") String push_id, @Query("mac_address") String mac_address);
+        @POST("/restaurants")
+        PMessageBackData getPMessageBackData(@Query("access_token") String access_token
+                , @Query("restaurant_name") String restaurant_name
+                , @Query("supervisor_name") String supervisor_name
+                , @Query("back_account") String back_account
+                , @Query("phone_number") String phone_number
+                , @Query("linsece") String linsece
+                , @Query("id_card_front") String id_card_front
+                , @Query("id_card_reverse") String id_card_reverse
+                , @Query("address") String address
+                , @Query("radius") String radius
+                , @Query("longitude") String longitude
+                , @Query("latitude") String latitude
+                , @Query("coordinate_x1") String coordinate_x1
+                , @Query("coordinate_x2") String coordinate_x2
+                , @Query("coordinate_y1") String coordinate_y1
+                , @Query("coordinate_y2") String coordinate_y2
+                );
     }
 
     public interface ApiManagerLogin {

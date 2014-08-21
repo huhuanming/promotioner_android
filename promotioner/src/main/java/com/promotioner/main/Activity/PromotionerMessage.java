@@ -7,6 +7,7 @@ import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,16 +24,26 @@ import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.location.LocationManagerProxy;
 import com.amap.api.location.LocationProviderProxy;
+import com.promotioner.main.Model.PMessageBackData;
+import com.promotioner.main.Model.PMessageData;
 import com.promotioner.main.R;
 import com.promotioner.main.Utils.BitmapUtils;
+import com.promotioner.main.Utils.MapUtils;
+import com.promotioner.main.Utils.ShareUtils;
+import com.promotioner.main.Utils.ToastUtils;
+import com.promotioner.main.Utils.TokenUtils.AccessToken;
+import com.promotioner.main.Utils.UploadImage.Image;
+import com.promotioner.main.Utils.UploadImage.PMessageUploadImage;
 import com.promotioner.main.View.Button.BootstrapButton;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
+import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 
 /**
  * Created by chen on 14-8-11.
@@ -45,10 +56,20 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     private boolean have_front_img = false;
     private boolean have_back_img = false;
     private boolean have_license_img = false;
+    private boolean have_location = false;
     //spinner
     private String[] radiuss={"500m","1000m","2000m","3000m"};
     private String radius = "500";
     private ArrayAdapter<String> adapter;
+
+    //上传所需四个点
+    private String northY = "";
+    private String southY = "";
+    private String eastX = "";
+    private String westX = "";
+
+    private String Latitude = "1";
+    private String Longitude = "1";
 
     private static final int ADD_IDCARD_BACK = 2;  //身份证反面
     private static final int ADD_IDCARD_FRONT = 1;  //身份证正面
@@ -68,6 +89,7 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     @InjectView(R.id.back_page)TextView back_page;
     @InjectView(R.id.location)TextView location;
     @InjectView(R.id.spinner_radius)Spinner spinner;
+    @InjectView(R.id.add_finish_progressbar)SmoothProgressBar progressbar;
 
 
     @OnClick(R.id.add_idcard_front)void addidcardfront(){
@@ -105,20 +127,100 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     @OnClick(R.id.get_location)void getlocation()
     {
         location.setText(R.string.startlocation);
+        have_location = false;
         init();
     }
 
     @OnClick(R.id.add_finish)void addfinish()
     {
-//        ArrayList<Image> arrayList = new ArrayList<Image>();
-//        try{
-//            arrayList.add(new Image(front_filepath,"file"));
-//            arrayList.add(new Image(back_filepath,"file"));
-//            arrayList.add(new Image(license_filepath,"file"));
-//        }catch (Exception e){
-//
-//        }
-//        PMessageUploadImage pMessageUploadImage = new PMessageUploadImage(arrayList);
+        if(merchants_name.getText().toString().trim().equals(""))
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请填写商家名称!");
+        }else if(store_name.getText().toString().trim().equals(""))
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请填写店铺名称!");
+        }else if(!have_front_img)
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请添加身份证正面照片!");
+        }else if(!have_back_img)
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请添加身份证反面照片!");
+        }else if(!have_license_img)
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请添加营业执照照片!");
+        }else if(bank_account.getText().toString().trim().equals(""))
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请填写银行账号!");
+        }else if(!have_location)
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请定出自己的位置方便上传!");
+        }else if(phonenumber.getText().toString().trim().equals(""))
+        {
+            ToastUtils.setToast(PromotionerMessage.this,"请填写手机号码!");
+        }
+        else{
+            progressbar.setVisibility(View.VISIBLE);
+            AccessToken accessToken = new AccessToken(ShareUtils.getToken(PromotionerMessage.this),ShareUtils.getKey(PromotionerMessage.this));
+            PMessageData pMessageData = new PMessageData();
+            pMessageData.setAccess_token(accessToken.accessToken());
+            pMessageData.setSupervisor_name(merchants_name.getText().toString());
+            pMessageData.setRestaurant_name(store_name.getText().toString());
+            pMessageData.setBack_account(bank_account.getText().toString());
+            pMessageData.setAddress(location.getText().toString());
+            pMessageData.setRadius(radius);
+            pMessageData.setPhone_number(phonenumber.getText().toString());
+            pMessageData.setCoordinate_x1(westX);
+            pMessageData.setCoordinate_x2(eastX);
+            pMessageData.setCoordinate_y1(northY);
+            pMessageData.setCoordinate_y2(southY);
+            pMessageData.setLatitude(Latitude);
+            pMessageData.setLongitude(Longitude);
+
+            ArrayList<Image> arrayList = new ArrayList<Image>();
+            try{
+                arrayList.add(new Image(front_filepath,"file"));
+                arrayList.add(new Image(back_filepath,"file"));
+                arrayList.add(new Image(license_filepath,"file"));
+            }catch (Exception e){
+
+            }
+            new PMessageUploadImage(pMessageData,arrayList,new PMessageUploadImage.PMmessageImageBackInterface() {
+                @Override
+                public void onSuccess(PMessageBackData pMessageBackData) {
+                    progressbar.setVisibility(View.GONE);
+                    ToastUtils.setToast(PromotionerMessage.this,"创建成功!");
+                    PromotionerMessage.this.finish();
+                }
+
+                @Override
+                public void onFailth(int code) {
+                    progressbar.setVisibility(View.GONE);
+                    switch (code)
+                    {
+                        case 401:
+                            ToastUtils.setToast(PromotionerMessage.this,"信息已经过期，请重新登录!");
+                            ShareUtils.deleteTokenKey(PromotionerMessage.this);
+                            PromotionerMessage.this.finish();
+                            setResult(401);
+                            break;
+                        case 404:
+                            ToastUtils.setToast(PromotionerMessage.this,"信息已经过期，请重新登录!");
+                            ShareUtils.deleteTokenKey(PromotionerMessage.this);
+                            PromotionerMessage.this.finish();
+                            setResult(401);
+                            break;
+                        case 501:
+                            ToastUtils.setToast(PromotionerMessage.this,"上传出错，请再重新上传一次!");
+                            break;
+                        default:
+                            ToastUtils.setToast(PromotionerMessage.this,"网络错误，请再重新上传一次!");
+                            break;
+                    }
+                }
+            });
+
+        }
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,7 +250,27 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                radius = radiuss[i];
+                Log.e("gggg",i+"");
+                switch (i)
+                {
+
+                    case 0:
+                        radius = "500";
+                        setLocationLength();
+                        break;
+                    case 1:
+                        radius = "1000";
+                        setLocationLength();
+                        break;
+                    case 2:
+                        radius = "2000";
+                        setLocationLength();
+                        break;
+                    case 3:
+                        radius = "3000";
+                        setLocationLength();
+                        break;
+                }
             }
 
             @Override
@@ -239,15 +361,27 @@ public class PromotionerMessage extends PromotionMain implements AMapLocationLis
     public void onLocationChanged(AMapLocation amapLocation) {
         if (amapLocation!=null&&amapLocation.getAMapException().getErrorCode() == 0) {
             // 定位成功回调信息，设置相关消息
-            String Latitude = amapLocation.getLatitude()+"";
-            String Longitude = amapLocation.getLongitude()+"";
+            Latitude = amapLocation.getLatitude()+"";
+            Longitude = amapLocation.getLongitude()+"";
             location.setText(amapLocation.getAddress());
+
             //移除定位请求
             mLocationManagerProxy.removeUpdates(this);
             // 销毁定位
             mLocationManagerProxy.destroy();
+
+            have_location = true;
+            setLocationLength();
         }
 
+    }
+
+    private void setLocationLength()
+    {
+        northY = MapUtils.northLon(Latitude, Longitude, radius);
+        southY = MapUtils.southLon(Latitude,Longitude,radius);
+        eastX = MapUtils.eastLat(Latitude,Longitude,radius);
+        westX = MapUtils.westLat(Latitude,Longitude,radius);
     }
 
     /**

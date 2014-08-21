@@ -198,6 +198,7 @@
                     android:layout_height="wrap_content"
                     android:textCursorDrawable="@null"
                     android:textColor="#777777"
+                    android:inputType="phone"
                     android:textColorHint="#ffdddddd"
                     android:textSize="20sp"
                     android:background="@null"
@@ -288,6 +289,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textCursorDrawable="@null"
+                    android:inputType="phone"
                     android:textColor="#777777"
                     android:textColorHint="#ffdddddd"
                     android:textSize="20sp"
@@ -296,14 +298,33 @@
                     android:hint="@string/number"/>
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="3dp">
+                <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                    android:id="@+id/add_finish_progressbar"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    />
+            </RelativeLayout>
+
             <com.promotioner.main.View.Button.BootstrapButton
                 android:id="@+id/add_finish"
                 android:layout_width="fill_parent"
                 android:layout_height="55dip"
                 android:clickable="true"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_centerInParent="true"
-
                 android:text="@string/add_finish"
                 bootstrapbutton:bb_text_gravity="center"
                 bootstrapbutton:bb_type="info" />

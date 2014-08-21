@@ -14,7 +14,7 @@ public class PromotionerAdd extends PromotionMain {
     @OnClick(R.id.promotioner_add_button)void addbuttonOnclick(){
         Intent intent = new Intent();
         intent.setClass(PromotionerAdd.this,PromotionerMessage.class);
-        startActivity(intent);
+        startActivityForResult(intent,201);
 
     }
     @Override
@@ -30,6 +30,19 @@ public class PromotionerAdd extends PromotionMain {
             intent.setClass(PromotionerAdd.this,PromotionerLogin.class);
             startActivity(intent);
             finish();
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+
+        switch(resultCode) {
+            case 401:
+                intent.setClass(PromotionerAdd.this,PromotionerLogin.class);
+                startActivity(intent);
+                finish();
+                break;
         }
     }
 }

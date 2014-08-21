@@ -13,12 +13,21 @@ import rx.subscriptions.Subscriptions;
 public class PromotionerApiManager extends MainApiManager{
 
     private static final PromotionerApiInterface.ApiManagerNoticeService apiManager = restAdapter.create(PromotionerApiInterface.ApiManagerNoticeService.class);
-    public static Observable<PMessageBackData> getPMessageBackData(final String channel_id, final String push_id, final String mac_address) {
+    public static Observable<PMessageBackData> getPMessageBackData(final String access_token, final String restaurant_name,
+                                                                   final String supervisor_name,final String back_account,
+                                                                   final String phone_number,final String linsece,
+                                                                   final String id_card_front,final String id_card_reverse,
+                                                                   final String address,final String radius,
+                                                                   final String longitude,final String latitude,
+                                                                   final String coordinate_x1,final String coordinate_x2,
+                                                                   final String coordinate_y1,final String coordinate_y2) {
         return Observable.create(new Observable.OnSubscribeFunc<PMessageBackData>() {
             @Override
             public Subscription onSubscribe(Observer<? super PMessageBackData> observer) {
                 try {
-                    observer.onNext(apiManager.getPMessageBackData(channel_id,push_id,mac_address));
+                    observer.onNext(apiManager.getPMessageBackData(access_token,restaurant_name,supervisor_name,
+                            back_account,phone_number,linsece,id_card_front,id_card_reverse,
+                            address,radius,longitude,latitude,coordinate_x1,coordinate_x2,coordinate_y1,coordinate_y2));
                     observer.onCompleted();
                 } catch (Exception e) {
                     observer.onError(e);
